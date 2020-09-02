@@ -1,0 +1,48 @@
+.main {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  height: 90%;
+  width: 80%;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+.header {
+  background-color: hotpink;
+  opacity: 0.5;
+  height: 10%;
+  border-radius: 15px 15px 0px 0px;
+  align-items: center;
+}
+.content {
+  height: 80%;
+}
+.info {
+  height: 100%;
+}
+.clothes {
+  background-color: darkgrey;
+  opacity: 0.5;
+}
+.footer {
+  background-color: pink;
+  opacity: 0.5;
+  height: 10%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.headerWeather {
+  height: 10%;
+  background-color: darkgrey;
+  text-align: right;
+  align-items: flex-end;
+  left: 10px;
+}
+.clothesPhotos {
+  height: 80%;
+}
+.clothesComment {
+  height: 20%;
+  align-items: flex-end;
+}
