@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import video from "./public/header.mp4";
 import img from "./public/cut_the_rope.png";
 import Weather from "./container/screens/weather/Weather";
