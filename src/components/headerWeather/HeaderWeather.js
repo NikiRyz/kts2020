@@ -1,13 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import { Row } from "antd";
 import "./HeaderWeather.css";
+import weatherStore from "stores/weather";
+import { observer } from "mobx-react";
 
-function HeaderWeather() {
-  return (
-    <Row className="headerWeather">
-      <h1>Москва</h1>
-    </Row>
-  );
+@observer
+class HeaderWeather extends Component {
+  render() {
+    return (
+      <Row className="headerWeather">
+        <h1>{weatherStore.city}</h1>
+      </Row>
+    );
+  }
 }
 
 export default HeaderWeather;

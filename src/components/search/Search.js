@@ -1,46 +1,68 @@
-import React from "react";
-import { Select } from "antd";
+import React, { useState } from "react";
+import { AutoComplete } from "antd";
+import weatherStore from "stores/weather";
 import "antd/dist/antd.css";
 
-const { Option } = Select;
-
-function onChange(value) {
-  console.log(`selected ${value}`);
-}
-
-function onBlur() {
-  console.log("blur");
-}
-
-function onFocus() {
-  console.log("focus");
-}
-
-function onSearch(val) {
-  console.log("search:", val);
-}
+const city = [
+  "Москва",
+  "Санкт-Петербург",
+  "Хабаровск",
+  "Нижний Новгород",
+  "Тула",
+];
+const find = (str) => {
+  const arrCity = city
+    .filter(
+      (elem) =>
+        elem.toLowerCase().includes(str.toLowerCase()) &&
+        elem.toLowerCase().indexOf(str.toLowerCase()) === 0
+    )
+    .sort();
+  const result = [];
+  arrCity.forEach((elem) => result.push({ value: elem }));
+  if (result.length > 5) {
+    result.splice(5, result.length - 1);
+  }
+  return result;
+};
+const getStartArr = () => {
+  const startArr = [];
+  city.sort().forEach((elem) => startArr.push({ value: elem }));
+  if (startArr.length > 5) {
+    startArr.splice(5, startArr.length - 1);
+  }
+  return startArr;
+};
 function Search() {
+  const [options, setOptions] = useState(getStartArr());
+  const [value, setValue] = useState("");
+
+  const onSearch = (searchText) => {
+    setOptions(!searchText ? getStartArr() : find(searchText));
+  };
+  const onSelect = (data) => {
+    setOptions(find(data));
+    setValue(data);
+    weatherStore.setCity(data);
+    weatherStore.weatherDate()
+  };
+
+  const onChange = (data) => {
+    setValue(data);
+  };
   return (
-    <Select
-      showSearch
-      style={{ width: "100%" }}
-      placeholder="Выберите город"
-      optionFilterProp="children"
-      onChange={onChange}
-      onFocus={onFocus}
-      onBlur={onBlur}
+    <AutoComplete
+      value={value}
+      options={options}
+      style={{
+        width: 400,
+      }}
+      onSelect={onSelect}
       onSearch={onSearch}
-      filterOption={(input, option) =>
-        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-      }
-      size="large"
-      allowClear={true}
-      autoFocus={true}
-    >
-      <Option value="Moscow">Москва</Option>
-      <Option value="St. Petersburg">Санкт-Петербург</Option>
-      <Option value="Khabarovsk">Хабаровск</Option>
-    </Select>
+      onChange={onChange}
+      notFoundContent="Я не знаю такого города :("
+      placeholder="Выберите город"
+    />
   );
 }
 
