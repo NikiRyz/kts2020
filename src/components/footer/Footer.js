@@ -4,7 +4,6 @@ import {
   WomanOutlined,
   ManOutlined,
   QuestionOutlined,
-  InfoCircleOutlined,
 } from "@ant-design/icons";
 import { Button, Switch } from "antd";
 import clothesStore from "stores/clothes";
