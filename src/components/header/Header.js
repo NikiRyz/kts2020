@@ -6,10 +6,8 @@ import "./Header.css";
 function Header() {
   return (
     <Row className="header">
-      <Col span={8} />
-      <Col span={8} className="search">
-        <Search />
-      </Col>
+        <Col span={10} offset={6}> <Search /></Col>
+
     </Row>
   );
 }

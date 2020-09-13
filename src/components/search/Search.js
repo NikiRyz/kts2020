@@ -2,14 +2,8 @@ import React, { useState } from "react";
 import { AutoComplete } from "antd";
 import weatherStore from "stores/weather";
 import "antd/dist/antd.css";
+import {city} from 'public/city'
 
-const city = [
-  "Москва",
-  "Санкт-Петербург",
-  "Хабаровск",
-  "Нижний Новгород",
-  "Тула",
-];
 const find = (str) => {
   const arrCity = city
     .filter(
@@ -61,7 +55,7 @@ function Search() {
       onSearch={onSearch}
       onChange={onChange}
       notFoundContent="Я не знаю такого города :("
-      placeholder="Выберите город"
+      placeholder="Выберите город..."
     />
   );
 }

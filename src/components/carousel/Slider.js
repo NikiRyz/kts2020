@@ -1,12 +1,12 @@
 import React from "react";
 import {Carousel, Image} from "antd";
-import "./Carousel.css";
+import "components/carousel/Slider.css";
 
 
 function Slider(props) {
 
   return (
-    <Carousel autoplay >
+    <Carousel autoplay dotPosition='right'>
       {props.arrClothes.map((elem, i) => {
         return (
           <div key={i}>

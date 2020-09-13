@@ -9,7 +9,7 @@ import HeaderWeather from "components/headerWeather";
 import Footer from "components/footer";
 import Error from "components/error/Error";
 import Clothes from "components/clothes/Clothes";
-import "./Weather.css";
+import "./Weather.scss";
 
 
 @observer

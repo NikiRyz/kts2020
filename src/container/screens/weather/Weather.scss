@@ -1,0 +1,57 @@
+$top: 2%;
+$height: 100%-$top * 2;
+$left: 5%;
+$width: 100%-$left * 2;
+$header: #89b0ae;
+$footer:#bee3db;
+$clothes: #ffd6ba;
+$content: #faf9f9;
+
+.header {
+  background-color: $header;
+}
+.headerWeather{
+  background-color: $content;
+}
+.main {
+  position: absolute;
+  top: $top;
+  left: $left;
+  height: $height;
+  width: $width;
+  background-color: $content;
+  opacity: 0.95;
+  border-radius: 15px;
+}
+@media screen and (max-width: 575.98px) {
+  .main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+.content {
+  height: 80%;
+}
+
+.info {
+  height: 100%;
+}
+.clothes {
+  background-color: $clothes;
+}
+.footer {
+  background-color: $footer;
+  height: 10%;
+  border-radius: 0px 0px 15px 15px;
+}
+.center {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
