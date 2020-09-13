@@ -5,7 +5,7 @@ import {
   ManOutlined,
   QuestionOutlined,
 } from "@ant-design/icons";
-import {Button, Col, Row, Switch} from "antd";
+import { Button, Col, Row, Switch } from "antd";
 import clothesStore from "stores/clothes";
 import "components/footer/Footer.css";
 
@@ -15,8 +15,8 @@ class Footer extends Component {
   };
   render() {
     return (
-      <Row >
-        <Col offset={6} span={6} className='footerColl'>
+      <Row>
+        <Col offset={6} span={6} className="footerColl">
           <Switch
             checkedChildren={<WomanOutlined />}
             unCheckedChildren={<ManOutlined />}
@@ -24,7 +24,7 @@ class Footer extends Component {
             defaultChecked
           />
         </Col>
-        <Col offset={6} span={6} className='footerColl'>
+        <Col offset={6} span={6} className="footerColl">
           <Link to="/help">
             <Button shape="circle" icon={<QuestionOutlined />} />
           </Link>

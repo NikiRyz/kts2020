@@ -11,7 +11,6 @@ import Error from "components/error/Error";
 import Clothes from "components/clothes/Clothes";
 import "./Weather.scss";
 
-
 @observer
 class Weather extends Component {
   componentDidMount() {
@@ -39,7 +38,7 @@ class Weather extends Component {
                   )}
                 </div>
               </Col>
-             <Clothes/>
+              <Clothes />
             </Row>
 
             <Row className="footer">

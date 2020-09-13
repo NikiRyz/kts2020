@@ -28,8 +28,10 @@ class WeatherStore {
   };
 
   @action weatherDate() {
-    this.fetch().then((r) => (this.weather = r)).then( ()=>this.setLoad(false))
-        .catch(()=>this.setError("Что-то плшло не так :("))
+    this.fetch()
+      .then((r) => (this.weather = r))
+      .then(() => this.setLoad(false))
+      .catch(() => this.setError("Что-то плшло не так :("));
   }
 
   @action setCity(data) {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Row } from "antd";
-import { Typography } from 'antd';
+import { Typography } from "antd";
 import "./HeaderWeather.css";
 import weatherStore from "stores/weather";
 import { observer } from "mobx-react";
@@ -11,7 +11,7 @@ class HeaderWeather extends Component {
   render() {
     return (
       <Row className="headerWeather">
-        <Title >{weatherStore.city}</Title>
+        <Title>{weatherStore.city}</Title>
       </Row>
     );
   }

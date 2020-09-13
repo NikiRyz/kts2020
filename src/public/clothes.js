@@ -139,7 +139,7 @@ export const clothes = {
       },
     },
   ],
-    //accessories:[{}]
+  //accessories:[{}]
 };
 
 // 				Аксессуары

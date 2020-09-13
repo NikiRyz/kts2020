@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AutoComplete } from "antd";
 import weatherStore from "stores/weather";
 import "antd/dist/antd.css";
-import {city} from 'public/city'
+import { city } from "public/city";
 
 const find = (str) => {
   const arrCity = city
@@ -38,7 +38,7 @@ function Search() {
     setOptions(find(data));
     setValue(data);
     weatherStore.setCity(data);
-    weatherStore.weatherDate()
+    weatherStore.weatherDate();
   };
 
   const onChange = (data) => {

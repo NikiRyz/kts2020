@@ -1,22 +1,22 @@
 .clothesPhotos {
-    height: 50%;
+  height: 50%;
 }
 .clothesComment {
-    height: 50%;
-
+  height: 50%;
 }
 
 @media screen and (max-width: 576px) {
-    .clothesPhotos {
-        display:none ;
-    }
-    .clothesComment {
-        height: 100%;
-    }
-.ant-avatar{
-    display:none ;
-}
-    h5.ant-typography, .ant-typography h5{
+  .clothesPhotos {
+    display: none;
+  }
+  .clothesComment {
+    height: 100%;
+  }
+  .ant-avatar {
+    display: none;
+  }
+  h5.ant-typography,
+  .ant-typography h5 {
     font-size: 12px;
-}
+  }
 }

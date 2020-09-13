@@ -1,8 +1,8 @@
-.footerColl{
-    transform: translateY(100%);
+.footerColl {
+  transform: translateY(100%);
 }
 @media screen and (max-width: 576px) {
-    .footerColl{
-        transform: translateY(50%);
-    }
+  .footerColl {
+    transform: translateY(50%);
+  }
 }

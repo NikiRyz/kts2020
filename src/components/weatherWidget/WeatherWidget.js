@@ -4,7 +4,6 @@ import Title from "antd/es/typography/Title";
 import img from "public/cut_the_rope.png";
 import "./WidgetsStyle.css";
 
-
 function WeatherWidget(props) {
   const { weather } = props;
   return (
@@ -31,7 +30,7 @@ function WeatherWidget(props) {
         </Col>
         <Col span={12} className="colWeather">
           <img src="https://img.icons8.com/pastel-glyph/64/000000/wind--v1.png" />
-            <Title level={3}> {Math.trunc(weather.wind.speed)} м/с</Title>
+          <Title level={3}> {Math.trunc(weather.wind.speed)} м/с</Title>
         </Col>
       </Row>
     </>

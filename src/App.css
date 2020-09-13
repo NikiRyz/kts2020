@@ -2,7 +2,7 @@ html {
   overflow: hidden;
 }
 
-body video{
+body video {
   position: absolute;
   top: 0;
   left: 0;

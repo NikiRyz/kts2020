@@ -4,10 +4,10 @@
   align-items: center;
 }
 
-.ant-select{
+.ant-select {
   width: 100% !important;
 }
-.ant-select input{
+.ant-select input {
   width: 100% !important;
   max-height: 150px;
 }

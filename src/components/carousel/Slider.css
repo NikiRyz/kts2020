@@ -1,24 +1,21 @@
-
-.slick-track img{
-    height: 5rem;
-    width: auto;
-
+.slick-track img {
+  height: 5rem;
+  width: auto;
 }
-.slick-slider{
-    top:3rem;
-    width: 50%;
-    left: 40%;
+.slick-slider {
+  top: 3rem;
+  width: 50%;
+  left: 40%;
 }
 
 @media screen and (max-width: 576px) {
-    .slick-track img{
-        height: 3rem;
-        width: auto;
-
-    }
-    .slick-slider{
-        top:3rem;
-        width: 100%;
-        left:0;
-    }
+  .slick-track img {
+    height: 3rem;
+    width: auto;
+  }
+  .slick-slider {
+    top: 3rem;
+    width: 100%;
+    left: 0;
+  }
 }

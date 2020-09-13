@@ -1,12 +1,10 @@
 import React from "react";
-import {Carousel, Image} from "antd";
+import { Carousel, Image } from "antd";
 import "components/carousel/Slider.css";
 
-
 function Slider(props) {
-
   return (
-    <Carousel autoplay dotPosition='right'>
+    <Carousel autoplay dotPosition="right">
       {props.arrClothes.map((elem, i) => {
         return (
           <div key={i}>
@@ -14,10 +12,8 @@ function Slider(props) {
           </div>
         );
       })}
-
     </Carousel>
   );
 }
 
 export default Slider;
-

@@ -3,14 +3,14 @@ $height: 100%-$top * 2;
 $left: 5%;
 $width: 100%-$left * 2;
 $header: #89b0ae;
-$footer:#bee3db;
+$footer: #bee3db;
 $clothes: #ffd6ba;
 $content: #faf9f9;
 
 .header {
   background-color: $header;
 }
-.headerWeather{
+.headerWeather {
   background-color: $content;
 }
 .main {
