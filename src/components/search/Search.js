@@ -14,17 +14,11 @@ const find = (str) => {
     .sort();
   const result = [];
   arrCity.forEach((elem) => result.push({ value: elem }));
-  if (result.length > 5) {
-    result.splice(5, result.length - 1);
-  }
   return result;
 };
 const getStartArr = () => {
   const startArr = [];
   city.sort().forEach((elem) => startArr.push({ value: elem }));
-  if (startArr.length > 5) {
-    startArr.splice(5, startArr.length - 1);
-  }
   return startArr;
 };
 function Search() {
@@ -56,6 +50,7 @@ function Search() {
       onChange={onChange}
       notFoundContent="Я не знаю такого города :("
       placeholder="Выберите город..."
+      allowClear={true}
     />
   );
 }

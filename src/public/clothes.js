@@ -6,6 +6,8 @@ export const clothes = {
           "ultraviolet/40/000000/basketball-jersey.png",
           "emoji/48/000000/shorts-emoji.png",
           "emoji/48/000000/running-shoe.png",
+          "cotton/64/000000/cap--v4.png",
+          "pastel-glyph/64/000000/vintage-glasses.png",
         ],
         description:
           "Сегодня жарко. Рекомендую надеть спортивный лук: шорты, майку и кроссовки из ткани",
@@ -15,6 +17,8 @@ export const clothes = {
           "cute-clipart/64/000000/t-shirt.png",
           "plasticine/100/000000/denim-shorts.png",
           "color/48/000000/trainers.png",
+          "cotton/64/000000/cap--v4.png",
+          "pastel-glyph/64/000000/vintage-glasses.png",
         ],
         description:
           "Сегодня жарко. Рекомендую надеть джинсовые шорты, футболку и кроссовки",
@@ -24,6 +28,8 @@ export const clothes = {
           "cute-clipart/64/000000/t-shirt.png",
           "emoji/48/000000/jeans-emoji.png",
           "color/48/000000/trainers.png",
+          "cotton/64/000000/cap--v4.png",
+          "pastel-glyph/64/000000/vintage-glasses.png",
         ],
         description:
           "Сегодня тепло. Рекомендую надеть джинсы летние, футболку и кроссовки",
@@ -42,6 +48,7 @@ export const clothes = {
         clothes: [
           "ios-glyphs/30/000000/blazer.png",
           "color/48/000000/jeans-jacket.png",
+          "flat_round/64/000000/garden-gloves.png",
           "emoji/48/000000/jeans-emoji.png",
           "ios-filled/50/000000/mens-shoe.png",
         ],
@@ -52,6 +59,7 @@ export const clothes = {
         clothes: [
           "ultraviolet/40/000000/coat.png",
           "cute-clipart/64/000000/jumper.png",
+          "flat_round/64/000000/garden-gloves.png",
           "emoji/48/000000/jeans-emoji.png",
           "plasticine/100/000000/sneakers.png",
         ],
@@ -62,6 +70,7 @@ export const clothes = {
         clothes: [
           "ios-filled/50/000000/fireman-coat.png",
           "plasticine/100/000000/mens-hoodie.png",
+          "flat_round/64/000000/garden-gloves.png",
           "emoji/48/000000/jeans-emoji.png",
           "cute-clipart/64/000000/boots.png",
         ],
@@ -77,6 +86,8 @@ export const clothes = {
           "cotton/64/000000/black-women-t-shirt-with-thin-straps.png",
           "dotty/80/000000/skirt.png",
           "ultraviolet/40/000000/flip-flops.png",
+          "cotton/64/000000/cap--v4.png",
+          "pastel-glyph/64/000000/vintage-glasses.png",
         ],
         description:
           "Сегодня жарко. Рекомендую надеть пляжный лук: юбку, майку и шлепанцы",
@@ -85,6 +96,8 @@ export const clothes = {
         clothes: [
           "emoji/48/000000/dress.png",
           "color/48/000000/womens-shoe.png",
+          "cotton/64/000000/cap--v4.png",
+          "pastel-glyph/64/000000/vintage-glasses.png",
         ],
         description: "Сегодня жарко. Рекомендую надеть платье и туфли",
       },
@@ -93,6 +106,8 @@ export const clothes = {
           "color/48/000000/t-shirt.png",
           "officel/16/000000/jeans.png",
           "flat_round/64/000000/sneakers.png",
+          "cotton/64/000000/cap--v4.png",
+          "pastel-glyph/64/000000/vintage-glasses.png",
         ],
         description:
           "Сегодня тепло. Рекомендую надеть джинсы летние, футболку и кеды",
@@ -111,6 +126,7 @@ export const clothes = {
         clothes: [
           "flat_round/64/000000/blazer.png",
           "flat_round/64/000000/womens-shirt.png",
+          "flat_round/64/000000/garden-gloves.png",
           "color/48/000000/jeans.png",
           "ios-filled/50/000000/womens-shoe.png",
         ],
@@ -121,6 +137,7 @@ export const clothes = {
         clothes: [
           "plasticine/100/000000/fireman-coat.png",
           "flat_round/100/000000/long-sleeve.png",
+          "flat_round/64/000000/garden-gloves.png",
           "ios-filled/50/000000/jeans.png",
           "pastel-glyph/64/000000/urban-sneakers.png",
         ],
@@ -131,6 +148,7 @@ export const clothes = {
         clothes: [
           "ios/50/000000/fireman-coat.png",
           "flat_round/64/000000/womens-hoodie.png",
+          "flat_round/64/000000/garden-gloves.png",
           "ios-filled/50/000000/jeans.png",
           "ios-glyphs/30/000000/tall-boots.png",
         ],
@@ -139,55 +157,9 @@ export const clothes = {
       },
     },
   ],
-  //accessories:[{}]
+  accessories: { umbrella: "dusk/64/000000/umbrella.png" },
 };
 
-// 				Аксессуары
-//
-//  "30":{
-//       "clothes":[
-//          "pastel-glyph/64/000000/vintage-glasses.png""
-//       ],
-//       "description":"Сегодня солнечно. Рекомендую надеть солнцезащитные очки"
-//   },
-//  "30":{
-//       "clothes":[
-//          "cotton/64/000000/cap--v4.png"
-//       ],
-//       "description":"Сегодня жарко. Рекомендую надеть кепку"
-//   },
-//  "10":{
-//       "clothes":[
-//          "cute-clipart/64/000000/beanie.png"
-//       ],
-//       "description":"Сегодня холодно и ветрено. Рекомендую надеть шапку"
-//   },
-//
-//  "10":{
-//       "clothes":[
-//          "dusk/64/000000/umbrella.png"
-//       ],
-//       "description":"Сегодня ожидается дождь. Рекомендую взять зонтик"
-//   },
-//
-//  "10":{
-//       "clothes":[
-//          "nolan/64/scarf.png"
-//       ],
-//       "description":"Сегодня холодно. Рекомендую взять шарф"
-//   },
-// "10":{
-//       "clothes":[
-//          "flat_round/64/000000/garden-gloves.png"
-//       ],
-//       "description":"Сегодня холодно. Рекомендую взять перчатки"
-//   }]
-//
-//
-//
-//
-//
-//
 // <img src="https://img.icons8.com/ultraviolet/40/000000/coat.png"/> пальто+
 // <img src="https://img.icons8.com/plasticine/100/000000/jacket.png"/> бомбер
 // <img src="https://img.icons8.com/cute-clipart/64/000000/t-shirt.png"/> футболка+

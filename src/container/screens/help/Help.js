@@ -19,33 +19,28 @@ function Help() {
         <Divider>
           <Title level={3}>Как пользоваться?</Title>
         </Divider>
-        <Row gutter={[8, 40]}>
+        <Row gutter={[8, 40]} className="helpRow">
           <p>Привет! Я проведу тебе небольшую экскурсию по нашему приложеню.</p>
         </Row>
 
-        <Row justify="space-around" gutter={[8, 40]}>
+        <Row justify="space-around" gutter={[8, 40]} className="helpRow">
           <Col span={12}>
-
             <Search />
           </Col>
           <Col span={12} align="middle">
-
             <p>Выбери город из списка</p>
           </Col>
         </Row>
-        <Row justify="space-around" gutter={[8, 40]}>
+        <Row justify="space-around" gutter={[8, 40]} className="helpRow">
           <Col span={12} align="middle">
-
             <Spin />
           </Col>
           <Col span={12} align="middle">
-
             <p>Дождись загрузки данных</p>
           </Col>
         </Row>
-        <Row justify="space-around" gutter={[8, 40]}>
+        <Row justify="space-around" gutter={[8, 40]} className="helpRow">
           <Col span={12} align="middle">
-
             <Switch
               checkedChildren={<WomanOutlined />}
               unCheckedChildren={<ManOutlined />}
@@ -53,21 +48,18 @@ function Help() {
             />
           </Col>
           <Col span={12} align="middle">
-
             <p>Выбери свой пол</p>
           </Col>
         </Row>
-        <Row justify="space-around" gutter={[8, 40]}>
+        <Row justify="space-around" gutter={[8, 40]} className="helpRow">
           <Col span={12}>
-
             <Comments comment="Сегодня прохладно. Рекомендую надеть джинсы, демисезонные ботинки, блузку и кожаную куртку" />
           </Col>
           <Col span={12} align="middle">
-
             <p>Прочитай рекомендации, что надеть</p>
           </Col>
         </Row>
-        <Row justify="space-around" gutter={[8, 40]}>
+        <Row justify="space-around" gutter={[8, 40]} className="helpRow">
           <Col span={12}>
             <Row justify="space-around">
               {[
@@ -86,10 +78,10 @@ function Help() {
           </Col>
 
           <Col span={12} align="middle">
-
             <p>Посмотри пример лука</p>
           </Col>
         </Row>
+
         <Divider>
           <Link to="/">
             <Button shape="circle" icon={<ArrowLeftOutlined />} />

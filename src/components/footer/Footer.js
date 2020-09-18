@@ -15,7 +15,7 @@ class Footer extends Component {
   };
   render() {
     return (
-      <Row>
+      <Row className="footerRow">
         <Col offset={6} span={6} className="footerColl">
           <Switch
             checkedChildren={<WomanOutlined />}

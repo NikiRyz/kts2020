@@ -1,3 +1,9 @@
 .text {
   margin: 5%;
 }
+.helpRow {
+  padding-top: 3%;
+}
+.main {
+  min-height: 900px;
+}

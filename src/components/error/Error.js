@@ -3,7 +3,9 @@ import React from "react";
 function Error() {
   return (
     <main className="main">
-      <h1>Наташ, мы уронили интернет, честное слово :(</h1>
+      <div className="center">
+        <h1>Что-то пошло не так :(</h1>
+      </div>
     </main>
   );
 }

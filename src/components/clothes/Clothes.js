@@ -17,7 +17,14 @@ class Clothes extends Component {
     let comment = "Я пока думаю...";
     if (!isNaN(temp)) {
       arrClothes = clothes[clothesStore.sex][0][temp]["clothes"];
+      let rain = Math.floor(weatherStore.weather.id / 1000 / 100) * 100;
       comment = clothes[clothesStore.sex][0][temp]["description"];
+      if (rain === 500) {
+        comment += " и возьмите зонт";
+        if (arrClothes.indexOf("dusk/64/000000/umbrella.png") === -1) {
+          arrClothes.push("dusk/64/000000/umbrella.png");
+        }
+      }
     }
     return (
       <Col span={6} className="clothes">

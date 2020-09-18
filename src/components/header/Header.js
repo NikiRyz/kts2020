@@ -7,7 +7,6 @@ function Header() {
   return (
     <Row className="header">
       <Col span={10} offset={6}>
-
         <Search />
       </Col>
     </Row>

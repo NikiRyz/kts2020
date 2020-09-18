@@ -6,3 +6,6 @@
     transform: translateY(50%);
   }
 }
+.footerRow {
+  max-height: 87px;
+}
